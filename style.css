@@ -1,45 +1,147 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap');
 
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Source Code Pro", monospace; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Code Pro", monospace;
+}
 
 body {
-    min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
     color: #f4f4f5;
-    background: linear-gradient(135deg, rgba(15,23,42,.92), rgba(30,41,59,.82)), url("img/fundo.png") center/cover no-repeat;
+    background: linear-gradient(135deg, rgba(15, 23, 42, .92), rgba(30, 41, 59, .82)), url("img/fundo.png") center / cover no-repeat;
 }
 
 form {
-    width: min(100%, 420px); padding: 36px; border: 1px solid rgba(255,255,255,.16); border-radius: 18px;
-    background: rgba(15,23,42,.78); box-shadow: 0 22px 60px rgba(0,0,0,.4); backdrop-filter: blur(10px);
+    width: min(100%, 420px);
+    padding: 36px;
+    border: 1px solid rgba(255, 255, 255, .16);
+    border-radius: 18px;
+    background: rgba(15, 23, 42, .78);
+    box-shadow: 0 22px 60px rgba(0, 0, 0, .4);
+    backdrop-filter: blur(10px);
 }
 
-form > .container:first-child { padding: 0; background: transparent; }
-form > .container:first-child > label:first-child { display: block; margin-bottom: 24px; color: #e0e7ff; font-size: 1.7rem; text-align: center; }
-form label { color: #cbd5e1; }
-
-form input[type="text"], form input[type="password"] {
-    width: 100%; height: 46px; margin: 8px 0 18px; padding: 0 44px 0 14px; border: 1px solid #475569;
-    border-radius: 10px; outline: none; color: #f8fafc; background: rgba(30,41,59,.85); transition: .2s;
+form > .container:first-child {
+    padding: 0;
+    background: transparent;
 }
 
-form input[type="text"]:focus, form input[type="password"]:focus { border-color: #818cf8; box-shadow: 0 0 0 3px rgba(129,140,248,.2); }
-form input::placeholder { color: #94a3b8; }
+form > .container:first-child > label:first-child {
+    display: block;
+    margin-bottom: 24px;
+    color: #e0e7ff;
+    font-size: 1.7rem;
+    text-align: center;
+}
 
-form i { position: relative; float: right; margin: -52px 14px 0 0; color: #a5b4fc; font-size: 1.25rem; pointer-events: none; }
+form label {
+    color: #cbd5e1;
+}
 
-form > .container:nth-of-type(2) { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; margin-top: 4px; padding: 0; background: transparent !important; }
-.criarconta, form > button[type="submit"] { border: 0; border-radius: 10px; color: #fff; font-weight: 700; cursor: pointer; transition: .2s; }
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    height: 46px;
+    margin: 8px 0 18px;
+    padding: 0 44px 0 14px;
+    border: 1px solid #475569;
+    border-radius: 10px;
+    outline: none;
+    color: #f8fafc;
+    background: rgba(30, 41, 59, .85);
+    transition: .2s;
+}
 
-.criarconta { padding: 10px 14px; background: #475569; }
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    border-color: #818cf8;
+    box-shadow: 0 0 0 3px rgba(129, 140, 248, .2);
+}
 
-form > button[type="submit"] { width: 100%; margin: 22px 0 16px; padding: 13px; background: linear-gradient(135deg,#6366f1,#8b5cf6); font-size: 1rem; }
+form input::placeholder {
+    color: #94a3b8;
+}
 
-.criarconta:hover, form > button[type="submit"]:hover { filter: brightness(1.12); transform: translateY(-2px); }
-.senha { display: block; width: 100%; color: #cbd5e1; font-size: .85rem; text-align: center; }
+form i {
+    position: relative;
+    float: right;
+    margin: -52px 14px 0 0;
+    color: #a5b4fc;
+    font-size: 1.25rem;
+    pointer-events: none;
+}
 
-.senha a { color: #a5b4fc; }
+form > .container:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 4px;
+    padding: 0;
+    background: transparent !important;
+}
 
-form > label:last-child { display: block; font-size: .85rem; text-align: center; }
-form input[type="checkbox"] { accent-color: #6366f1; margin-right: 6px; }
+.criarconta,
+form > button[type="submit"] {
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
 
-@media (max-width: 480px) { form { padding: 28px 20px; } }
+.criarconta {
+    padding: 10px 14px;
+    background: #475569;
+}
+
+form > button[type="submit"] {
+    width: 100%;
+    margin: 22px 0 16px;
+    padding: 13px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    font-size: 1rem;
+}
+
+.criarconta:hover,
+form > button[type="submit"]:hover {
+    filter: brightness(1.12);
+    transform: translateY(-2px);
+}
+
+.senha {
+    display: block;
+    width: 100%;
+    color: #cbd5e1;
+    font-size: .85rem;
+    text-align: center;
+}
+
+.senha a {
+    color: #a5b4fc;
+}
+
+form > label:last-child {
+    display: block;
+    font-size: .85rem;
+    text-align: center;
+}
+
+form input[type="checkbox"] {
+    accent-color: #6366f1;
+    margin-right: 6px;
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 28px 20px;
+    }
+}
